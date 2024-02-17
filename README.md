@@ -34,3 +34,43 @@ An SAP Fiori application.
 1. Active NodeJS LTS (Long Term Support) version and associated supported NPM version.  (See https://nodejs.org)
 
 
+#### Configuration in BTP
+1. Create HTTP destination in the subaccount:
+
+```shell
+#
+#Sat Feb 17 09:50:16 UTC 2024
+URL=https\://api.chucknorris.io
+Name=chuckdest
+HTML5.DynamicDestination=true
+ProxyType=Internet
+Type=HTTP
+WebIDEEnabled=true
+WebIDEUsage=odata_gen
+Authentication=NoAuthentication
+```
+
+2. Subscribe to one of the services:
+  + SAP Build Work Zone, standard edition
+  + SAP Build Work Zone, advanced edition
+  + SAP Cloud Portal
+
+3. clone the repository
+
+4. build, deploy, download deployment logs:
+```shell
+mbt build
+cf deploy mta_archives/project6_0.0.1.mtar 
+cf dmol -i <ID>  
+```
+
+#### Links
+[Developing HTML5 Applications in the Cloud Foundry Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/developing-html5-applications-in-cloud-foundry-environment)  
+[Deploy Content Using the Generic Application Content Deployer](https://help.sap.com/docs/btp/sap-business-technology-platform/deploy-content-using-generic-application-content-deployer) 
+[Managed Application Router](https://help.sap.com/docs/btp/sap-business-technology-platform/managed-application-router)  
+[Application Router](https://help.sap.com/docs/btp/sap-business-technology-platform/application-router)  
+
+[Community - How to access a BTP destination within SAPUI5 when executing AJAX call
+](https://community.sap.com/t5/technology-q-a/how-to-access-a-btp-destination-within-sapui5-when-executing-ajax-call/qaq-p/12497764)  
+[Community - Calling Service using AJAX in Fiori Elements Extension doesn't work in Launchpad](https://community.sap.com/t5/technology-q-a/calling-service-using-ajax-in-fiori-elements-extension-doesn-t-work-in/qaq-p/12398015)  
+
