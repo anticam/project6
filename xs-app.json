@@ -3,8 +3,9 @@
   "authenticationMethod": "route",
   "routes": [
     {
-      "source": "^/jokes/(.*)$",
-      "destination": "CHUCK",
+      "source": "^/chuckdest/(.*)$",
+      "target": "/$1",
+      "destination": "chuckdest",
       "authenticationType": "none",
       "csrfProtection": false
     },

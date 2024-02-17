@@ -12,8 +12,18 @@ sap.ui.define([
 
             },
             callJoke() {
+                var appId = this.getOwnerComponent().getManifestEntry("/sap.app/id");
+                console.log("appId: " + appId);
 
-                $.get("/jokes/random", function(data) {
+                var appPath = appId.replaceAll(".", "/");
+                console.log("appPath: " + appPath);
+
+                // var appModulePath = jQuery.sap.getModulePath(appPath);
+                var appModulePath = sap.ui.require.toUrl(appPath);
+
+                console.log("appModulePath: " + appModulePath)
+
+                $.get("./chuckdest/jokes/random", function(data) {
                     console.log(data);
                     alert(data.value);
                 });
