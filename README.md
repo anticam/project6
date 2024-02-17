@@ -19,7 +19,7 @@
 
 ## project6
 
-An SAP Fiori application.
+An SAP UI5 Fiori application calls Chuck Norris Jokes API https://api.chucknorris.io/.
 
 ### Starting the generated app
 
@@ -35,7 +35,7 @@ An SAP Fiori application.
 
 
 #### Configuration in BTP
-1. Create HTTP destination in the subaccount:
+1. Create an HTTP destination in the subaccount:
 
 ```shell
 #
@@ -51,7 +51,7 @@ Authentication=NoAuthentication
 ```
 
 2. Subscribe to one of the services:
-  + SAP Build Work Zone, standard edition
+  + **SAP Build Work Zone, standard edition**
   + SAP Build Work Zone, advanced edition
   + SAP Cloud Portal
 
