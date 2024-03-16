@@ -1,7 +1,9 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="project6.controller.View1" displayBlock="true">
     <Page id="page" title="{i18n>title}">
         <content>
-            <Button xmlns="sap.m" text="Button" id="button0" press="callJoke" />
+            <Button xmlns="sap.m" text="Chuck" id="button0" press="callJoke"/>
+            <Button xmlns="sap.m" text="North" id="button1" press="callNorth"/>
+            <Button xmlns="sap.m" text="Direct" id="button2" press="callNorthDirect"/>
         </content>
     </Page>
 </mvc:View>
