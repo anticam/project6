@@ -35,11 +35,11 @@ An SAP UI5 Fiori application calls Chuck Norris Jokes API https://api.chucknorri
 
 
 #### Configuration in BTP
-1. Create an HTTP destination in the subaccount:
+1. Create an HTTP destinations in the subaccount:
 
+for chuckdest
 ```shell
 #
-#Sat Feb 17 09:50:16 UTC 2024
 URL=https\://api.chucknorris.io
 Name=chuckdest
 HTML5.DynamicDestination=true
@@ -48,6 +48,19 @@ Type=HTTP
 WebIDEEnabled=true
 WebIDEUsage=odata_gen
 Authentication=NoAuthentication
+```
+
+for northdest
+```shell
+#
+Name=northdest
+URL=https\://services.odata.org
+ProxyType=Internet
+HTML5.DynamicDestination=true
+Type=HTTP
+WebIDEEnabled=true
+Authentication=NoAuthentication
+WebIDEUsage=odata_gen
 ```
 
 2. Subscribe to one of the services:
