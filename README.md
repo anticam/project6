@@ -87,3 +87,6 @@ cf dmol -i <ID>
 ](https://community.sap.com/t5/technology-q-a/how-to-access-a-btp-destination-within-sapui5-when-executing-ajax-call/qaq-p/12497764)  
 [Community - Calling Service using AJAX in Fiori Elements Extension doesn't work in Launchpad](https://community.sap.com/t5/technology-q-a/calling-service-using-ajax-in-fiori-elements-extension-doesn-t-work-in/qaq-p/12398015)  
 
+[Custom controller AJAX call is returning a 404 when calling the API](https://ga.support.sap.com/dtp/viewer/index.html#/tree/3046/actions/45995:45996:50742:51205:51192:51196:52513)
+
+
