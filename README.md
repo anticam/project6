@@ -63,6 +63,10 @@ Authentication=NoAuthentication
 WebIDEUsage=odata_gen
 ```
 
+```shell
+#todo include CF CLI to create destinations
+```
+
 2. Subscribe to one of the services:
   + **SAP Build Work Zone, standard edition**
   + SAP Build Work Zone, advanced edition
