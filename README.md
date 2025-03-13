@@ -41,6 +41,7 @@ import the destinations:
 - destination-chuck.txt
 - destination-north.txt
 - destination-webhook.txt
+- destinaiton-webhook2.txt
 
 ```shell
 #todo include CF CLI to create destinations
