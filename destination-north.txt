@@ -1,0 +1,9 @@
+#
+Name=northdest
+URL=https\://services.odata.org
+ProxyType=Internet
+HTML5.DynamicDestination=true
+Type=HTTP
+WebIDEEnabled=true
+Authentication=NoAuthentication
+WebIDEUsage=odata_gen

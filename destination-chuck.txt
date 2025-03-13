@@ -1,0 +1,9 @@
+#
+Type=HTTP
+HTML5.DynamicDestination=true
+Authentication=NoAuthentication
+WebIDEEnabled=true
+ProxyType=Internet
+URL=https\://api.chucknorris.io
+Name=chuckdest
+WebIDEUsage=odata_gen

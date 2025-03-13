@@ -37,7 +37,8 @@ An SAP UI5 Fiori application calls Chuck Norris Jokes API https://api.chucknorri
 #### Configuration in BTP
 1. Create an HTTP destinations in the subaccount:
 
-for chuckdest
+import the destination-chuck.txt or create it manually:
+
 ```shell
 #
 URL=https\://api.chucknorris.io
@@ -50,7 +51,8 @@ WebIDEUsage=odata_gen
 Authentication=NoAuthentication
 ```
 
-for northdest
+import the destination-north.txt or create it manually:
+
 ```shell
 #
 Name=northdest
