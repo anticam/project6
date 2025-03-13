@@ -3,12 +3,25 @@
   "authenticationMethod": "route",
   "routes": [
     {
+      "source": "^/be/(.*)$",
+      "target": "/sap/gwu/$1",
+      "destination": "webhookdest2",
+      "authenticationType": "none",
+      "csrfProtection": false
+    },
+        {
+      "source": "^/sap/gwu(.*)$",
+      "target": "/sap/gwu/$1",
+      "destination": "webhookdest2",
+      "authenticationType": "none",
+      "csrfProtection": false
+    },
+    {
       "source": "^/sap/(.*)$",
-      "target": "/$1",
+      "target": "/sap/$1",
       "destination": "webhookdest",
       "authenticationType": "none",
       "csrfProtection": false
-
     },
     {
       "source": "^/chuckdest/(.*)$",

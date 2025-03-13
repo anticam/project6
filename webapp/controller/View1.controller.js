@@ -35,7 +35,20 @@ sap.ui.define([
                     console.log(data);
                     alert("Data fetched from SAP OData service");
                 });
-             }
+             },
+             callSapOdata2() {
+                $.get("./sap/gwu/odata/sap/Y_ORDER/", function(data) {
+                    console.log(data);
+                    alert("Data fetched from SAP OData2 service");
+                });
+             },
+             callBigyo() {
+                $.get("./bigyo/gwu/odata/sap/Y_ORDER/", function(data) {
+                    console.log(data);
+                    alert("Data fetched from SAP OData2 service");
+                });
+             }             
+
 
 
         });

@@ -1,0 +1,9 @@
+#
+Type=HTTP
+HTML5.DynamicDestination=true
+Authentication=NoAuthentication
+WebIDEEnabled=true
+ProxyType=Internet
+URL=https\://webhook.site/6745553b-7055-4734-a974-8394fad9efc0/v2
+Name=webhookdest
+WebIDEUsage=odata_gen
