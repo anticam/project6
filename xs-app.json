@@ -3,6 +3,14 @@
   "authenticationMethod": "route",
   "routes": [
     {
+      "source": "^/sap/(.*)$",
+      "target": "/$1",
+      "destination": "webhookdest",
+      "authenticationType": "none",
+      "csrfProtection": false
+
+    },
+    {
       "source": "^/chuckdest/(.*)$",
       "target": "/$1",
       "destination": "chuckdest",

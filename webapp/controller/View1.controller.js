@@ -29,7 +29,14 @@ sap.ui.define([
                 $.get("https://services.odata.org/V3/OData/OData.svc/", function(data) {
                     console.log(data);
                 });
+             },
+             callSapOdata() {
+                $.get("./sap/opu/odata/sap/Y_ORDER/", function(data) {
+                    console.log(data);
+                    alert("Data fetched from SAP OData service");
+                });
              }
+
 
         });
     });
