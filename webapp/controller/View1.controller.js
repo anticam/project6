@@ -47,7 +47,22 @@ sap.ui.define([
                     console.log(data);
                     alert("Data fetched from SAP OData2 service");
                 });
-             }             
+             }   ,
+             
+            callPingNoAuth() {
+                $.get("./sap/public/ping?sap-client=100", function(data) {
+                    console.log(data);
+                    alert("Pinged without authentication");
+                });
+            },
+
+            callPingNoAuth() {
+                $.get("./sap/bc/ping?sap-client=100", function (data) {
+                    console.log(data);
+                    alert("Pinged with authentication");
+                });
+            }
+
 
 
 

@@ -9,7 +9,35 @@
       "authenticationType": "none",
       "csrfProtection": false
     },
-        {
+    {
+      "source": "^/sap/public/(.*)$",
+      "target": "/sap/public/$1",
+      "destination": "hufnoauth",
+      "authenticationType": "none",
+      "csrfProtection": false
+    },
+    {
+      "source": "^/sap/bc/(.*)$",
+      "target": "/sap/bc/$1",
+      "destination": "hufwithauth",
+      "authenticationType": "basic",
+      "csrfProtection": false
+    },
+    {
+      "source": "^/webhookdest2/(.*)$",
+      "target": "/$1",
+      "destination": "webhookdest2",
+      "authenticationType": "none",
+      "csrfProtection": false
+    },
+    {
+      "source": "^/webhookdest/(.*)$",
+      "target": "/$1",
+      "destination": "webhookdest",
+      "authenticationType": "none",
+      "csrfProtection": false
+    },
+    {
       "source": "^/sap/gwu(.*)$",
       "target": "/sap/gwu/$1",
       "destination": "webhookdest2",

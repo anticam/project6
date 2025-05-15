@@ -7,6 +7,8 @@
             <Button xmlns="sap.m" text="/sap/odata" id="button3" press="callSapOdata"/>
             <Button xmlns="sap.m" text="/sap/odata2" id="button4" press="callSapOdata2"/>
             <Button xmlns="sap.m" text="bigyo" id="button5" press="callBigyo"/>
+            <Button xmlns="sap.m" text="ping no auth" id="button6" press="callPingNoAuth"/>
+            <Button xmlns="sap.m" text="ping with auth" id="button7" press="callPingWithAuth" />
         </content>
     </Page>
 </mvc:View>
