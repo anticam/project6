@@ -54,12 +54,21 @@ import the destinations:
 
 3. clone the repository
 
+```shell
+git clone https://github.com/anticam/project6.git
+```
+
 4. build, deploy, download deployment logs:
+
 ```shell
 mbt build
 cf deploy mta_archives/project6_0.0.1.mtar 
 cf dmol -i <ID>  
 ```
+
+5. access the User API endpoints
+   /user-api/[currentUser](https://www.npmjs.com/package/@sap/approuter#user-api-service) - it returns all details of logged in users. 
+   /user-api/[attributes](https://www.npmjs.com/package/@sap/approuter#user-api-service) - it returns the main user properties.
 
 #### Links
 [Developing HTML5 Applications in the Cloud Foundry Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/developing-html5-applications-in-cloud-foundry-environment)  
